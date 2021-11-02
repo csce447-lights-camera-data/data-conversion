@@ -28,7 +28,7 @@ db = {}
 
 headers = []
 # keep = ['title', 'original_title', 'description', 'avg_vote', 'votes', 'budget', 'usa_gross_income', 'worlwide_gross_income', 'director', 'writer', 'production_company', 'actors']
-keep = ['title', 'avg_vote', 'votes', 'budget'] # Minified to reduce filesize
+keep = ['original_title', 'avg_vote', 'votes', 'budget'] # Minified to reduce filesize
 ints = ['votes']
 floats = ['avg_vote']
 monies = ['budget', 'usa_gross_income', 'worlwide_gross_income']
