@@ -50,9 +50,9 @@ with open(input('Input Filename: '), newline='', encoding='utf-8') as f:
                         db.pop(row[headers.index('imdb_title_id')])
                         break
                     if e in monies:
-                        if value[0] != '$':
-                            db.pop(row[headers.index('imdb_title_id')])
-                            break
+                        # if value[0] != '$': # Disabled this because csv format changed
+                        #     db.pop(row[headers.index('imdb_title_id')])
+                        #     break
                         value = currency_parser(value)
                     elif e in floats:
                         value = float(value)
